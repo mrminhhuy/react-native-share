@@ -2,6 +2,6 @@
 
 @import UIKit;
 
-@interface ActivityView : NSObject <RCTBridgeModule>
+@interface ShareImages : NSObject <RCTBridgeModule>
 
 @end

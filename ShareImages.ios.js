@@ -1,5 +1,5 @@
 /**
- * @providesModule ActivityView
+ * @providesModule ShareImages
  * @flow
  */
 'use strict';
@@ -9,14 +9,14 @@ var {
   NativeModules
 } = React;
 
-var NativeActivityView = NativeModules.ActivityView;
+var ShareImages = NativeModules.ShareImages;
 
 /**
  * High-level docs for the ActivityView iOS API can be written here.
  */
 
-var ActivityView = {
-  show: NativeActivityView.show
+var ShareImages = {
+  show: ShareImages.show
 };
 
-module.exports = ActivityView;
+module.exports = ShareImages;

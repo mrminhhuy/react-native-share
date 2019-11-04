@@ -1,17 +1,17 @@
 /**
- * Stub of ActivityView for Android.
+ * Stub of ShareImages for Android.
  *
- * @providesModule ActivityView
+ * @providesModule ShareImages
  * @flow
  */
 'use strict';
 
 var warning = require('warning');
 
-var ActivityView = {
+var ShareImages = {
   test: function test() {
     warning('Not yet implemented for Android.');
   }
 };
 
-module.exports = ActivityView;
+module.exports = ShareImages;

@@ -1,10 +1,10 @@
-#import "ActivityView.h"
+#import "ShareImages.h"
 #import <React/RCTLog.h>
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 #import <React/RCTImageLoader.h>
 
-@implementation ActivityView
+@implementation ShareImages
 
 @synthesize bridge = _bridge;
 
@@ -38,7 +38,7 @@ RCT_EXPORT_MODULE()
     [passedKeys enumerateObjectsUsingBlock:^(NSString *activityName, NSUInteger idx, BOOL *stop) {
         NSString *activity = [activities objectForKey:activityName];
         if (!activity) {
-            RCTLogWarn(@"[ActivityView] Unknown activity to exclude: %@. Expected one of: %@", activityName, [activities allKeys]);
+            RCTLogWarn(@"[ShareImages] Unknown activity to exclude: %@. Expected one of: %@", activityName, [activities allKeys]);
             return;
         }
         [excludedActivities addObject:activity];
@@ -60,7 +60,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
                 shareImage = [UIImage imageWithData:decodedImage];
                 [images addObject:shareImage];
             } @catch (NSException *exception) {
-                RCTLogWarn(@"[ActivityView] Could not decode image");
+                RCTLogWarn(@"[ShareImages] Could not decode image");
             }
         }
     }
