@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/codevoler/react-native-images-share",
   "devDependencies": {
-    "eslint": "0.24.1",
+    "eslint": "6.6.0",
     "eslint-plugin-react": "2.7.1"
   }
 }
