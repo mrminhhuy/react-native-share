@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "description": "Multiple images share for iOS",
   "scripts": {
-    "lint": "node_modules/.bin/eslint .",
+    "lint": "eslint .",
     "start": "node_modules/react-native/packager/packager.sh",
     "test": "npm run lint"
   },
-  "main": "ShareImages.ios.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codevoler/react-native-images-share.git"
+    "url": "git+https://github.com/codevoler/react-native-images-share.git"
   },
   "keywords": [
     "react-native",
