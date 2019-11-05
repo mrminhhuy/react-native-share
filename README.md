@@ -7,7 +7,7 @@ Showing the ActivityView for iOS is as simple as calling:
 ```js
 ShareImages.show({
   images: [''], // list images base64
-  exclude: ['postToFlickr'],
+  exclude: [''],
   anchor: React.findNodeHandle(this.refs.share)
 });
 ```
