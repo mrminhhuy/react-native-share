@@ -1,7 +1,7 @@
 {
   "name": "react-native-images-share",
-  "version": "0.0.1",
-  "description": "Multiple images share for iOS",
+  "version": "0.0.2",
+  "description": "Multiple images share",
   "scripts": {
     "lint": "eslint .",
     "start": "node_modules/react-native/packager/packager.sh",
