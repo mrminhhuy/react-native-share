@@ -3,7 +3,7 @@
 import ShareImages from 'react-native-images-share';
 ```
 
-Showing the ActivityView for iOS is as simple as calling:
+Simple as calling:
 ```js
 ShareImages.show({
   images: [''], // list images base64
