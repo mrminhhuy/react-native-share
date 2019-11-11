@@ -1,15 +1,17 @@
 'use strict';
 
 import { NativeModules, Platform } from 'react-native';
-const { ShareImages } = from 'NativeModules';
+const ShareImages = NativeModules.ShareImages;
 
-var ShareImages = Platform.OS == 'ios' ? {
+var ShareImagesModule = Platform.OS == 'ios' ? {
   show: ShareImages.show
-} ? { show(options: Object, title: string)
-         { ShareImages.show(options, title); },
+} : {
+  show(options: Object) {
+      ShareImages.show(options);
+    },
     render() {
      return (<View></View>);
     }
 }
 
-module.exports = ShareImages;
+module.exports = ShareImagesModule;

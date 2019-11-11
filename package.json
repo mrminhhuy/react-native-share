@@ -1,6 +1,6 @@
 {
   "name": "react-native-images-share",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Multiple images share",
   "scripts": {
     "lint": "eslint .",
@@ -10,7 +10,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codevoler/react-native-images-share.git"
+    "url": "git+https://github.com/codeairfight/react-native-images-share.git"
   },
   "keywords": [
     "react-native",
@@ -30,12 +30,12 @@
     "social",
     "airdrop"
   ],
-  "author": "Code Voler",
+  "author": "Air Fighter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codevoler/react-native-images-share/issues"
+    "url": "https://github.com/codeairfight/react-native-images-share/issues"
   },
-  "homepage": "https://github.com/codevoler/react-native-images-share",
+  "homepage": "https://github.com/codeairfight/react-native-images-share",
   "devDependencies": {
     "eslint": "6.6.0",
     "eslint-plugin-react": "2.7.1"

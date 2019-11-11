@@ -1,0 +1,5 @@
+rootProject.name = 'CodeAirFight'
+include ':react-native-images-share'
+project(':react-native-images-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-images-share/android')
+
+include ':app'

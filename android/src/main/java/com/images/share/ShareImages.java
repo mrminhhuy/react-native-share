@@ -74,7 +74,7 @@ class ShareImages extends ReactContextBaseJavaModule {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Activity currentActivity = getCurrentActivity();
         if (currentActivity != null) {
-            currentActivity.startActivity(Intent.createChooser(intent, 'Share'));
+            currentActivity.startActivity(Intent.createChooser(intent, "Share"));
         }
     }
 }

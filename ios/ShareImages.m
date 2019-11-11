@@ -19,7 +19,6 @@ RCT_EXPORT_MODULE()
     NSDictionary *activities = @{
        @"postToFacebook": UIActivityTypePostToFacebook,
        @"postToTwitter": UIActivityTypePostToTwitter,
-       @"postToWeibo": UIActivityTypePostToWeibo,
        @"message": UIActivityTypeMessage,
        @"mail": UIActivityTypeMail,
        @"print": UIActivityTypePrint,
@@ -60,10 +59,11 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
                 shareImage = [UIImage imageWithData:decodedImage];
                 [images addObject:shareImage];
             } @catch (NSException *exception) {
-                RCTLogWarn(@"[ShareImages] Could not decode image");
+                RCTLogWarn(@"[ShareImages] ERROR");
             }
         }
     }
+    return [self showWithOptions:args image:shareImage images: images];
 }
 
 - (void) showWithOptions:(NSDictionary *)args image:(UIImage *)image images:(NSMutableArray *) images
@@ -77,15 +77,9 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
     UIViewController *ctrl = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     if ([activityView respondsToSelector:@selector(popoverPresentationController)]) {
         activityView.popoverPresentationController.sourceView = ctrl.view;
-        NSNumber *anchorViewTag = [RCTConvert NSNumber:args[@"anchor"]];
-        if (anchorViewTag) {
-            UIView *anchorView = [self.bridge.uiManager viewForReactTag:anchorViewTag];
-            activityView.popoverPresentationController.sourceRect = [anchorView convertRect:anchorView.bounds toView:ctrl.view];
-        } else {
-            CGRect sourceRect = CGRectMake(ctrl.view.center.x, ctrl.view.center.y, 1, 1);
-            activityView.popoverPresentationController.sourceRect = sourceRect;
-            activityView.popoverPresentationController.permittedArrowDirections = 0;
-        }
+        CGRect sourceRect = CGRectMake(ctrl.view.center.x, ctrl.view.center.y, 1, 1);
+        activityView.popoverPresentationController.sourceRect = sourceRect;
+        activityView.popoverPresentationController.permittedArrowDirections = 0;
     }
     [ctrl presentViewController:activityView animated:YES completion:nil];
 }
