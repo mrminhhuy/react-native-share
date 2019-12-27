@@ -1,3 +1,6 @@
+```js
+npm i react-native-images-share
+```
 
 ```js
 import ShareImages from 'react-native-images-share';
