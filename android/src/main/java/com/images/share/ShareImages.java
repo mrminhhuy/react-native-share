@@ -68,7 +68,11 @@ class ShareImages extends ReactContextBaseJavaModule {
             }
             intent.putExtra(Intent.EXTRA_STREAM, imageUri);
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            intent.setType("image/jpg");
+            if(options.hasKey("isPDF")) {
+              intent.setType("application/pdf");
+            } else {
+              intent.setType("image/jpg");
+            }
           }
         }
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

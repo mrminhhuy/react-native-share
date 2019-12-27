@@ -1,7 +1,7 @@
 {
-  "name": "react-native-images-share",
-  "version": "0.0.7",
-  "description": "Multiple images share",
+  "name": "react-native-share",
+  "version": "0.0.8",
+  "description": "Multiple images, pdf share",
   "scripts": {
     "lint": "eslint .",
     "start": "node_modules/react-native/packager/packager.sh",
@@ -10,7 +10,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeairfight/react-native-images-share.git"
+    "url": "git+https://github.com/codebetterme/react-native-share.git"
   },
   "keywords": [
     "react-native",
@@ -33,9 +33,9 @@
   "author": "Air Fighter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codeairfight/react-native-images-share/issues"
+    "url": "https://github.com/codebetterme/react-native-share/issues"
   },
-  "homepage": "https://github.com/codeairfight/react-native-images-share",
+  "homepage": "https://github.com/codebetterme/react-native-share",
   "devDependencies": {
     "eslint": "6.6.0",
     "eslint-plugin-react": "2.7.1"

@@ -6,8 +6,9 @@ import ShareImages from 'react-native-images-share';
 Simple as calling:
 ```js
 ShareImages.show({
-  images: [''], // list images base64
-  exclude: ['']
+  images: [''], // list images base64 or pdf base64
+  exclude: [''],
+  isPDF: true | false
 });
 ```
 #### Note:
@@ -17,11 +18,11 @@ Try an example in repos.
 This is some screenshots:
 - Share button
 * iOS:
-![ScreenShot](https://raw.githubusercontent.com/codeairfight/react-native-images-share/master/example/images/img_ios_home.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_ios_home.png)
 * android:
-![ScreenShot](https://raw.githubusercontent.com/codeairfight/react-native-images-share/master/example/images/img_android_home.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_android_home.png)
 - Share View
 * iOS:
-![ScreenShot](https://raw.githubusercontent.com/codeairfight/react-native-images-share/master/example/images/img_ios_share.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_ios_share.png)
 * android:
-![ScreenShot](https://raw.githubusercontent.com/codeairfight/react-native-images-share/master/example/images/img_android_share.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_android_share.png)

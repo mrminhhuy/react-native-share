@@ -49,9 +49,14 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(show:(NSDictionary *)args)
 {
     NSArray *imageBase64 = args[@"images"];
+    NSString *isPDF = args[@"isPDF"];
     NSMutableArray *images = [NSMutableArray array];
     __block UIImage *shareImage;
     if (imageBase64) {
+      if (isPDF) {
+        NSData *pdfData = [NSData dataWithContentsOfFile:imageBase64];
+        [images addObject:pdfData];
+      } else {
         for(int i = 0; i < [imageBase64 count]; i++){
             @try {
                 NSData *decodedImage = [[NSData alloc] initWithBase64EncodedString:[imageBase64 objectAtIndex:i]
@@ -62,6 +67,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
                 RCTLogWarn(@"[ShareImages] ERROR");
             }
         }
+      }
     }
     return [self showWithOptions:args image:shareImage images: images];
 }
