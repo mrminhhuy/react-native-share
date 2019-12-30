@@ -1,6 +1,6 @@
 {
-  "name": "react-native-share",
-  "version": "0.0.8",
+  "name": "react-native-files-share",
+  "version": "0.1.0",
   "description": "Multiple images, pdf share",
   "scripts": {
     "lint": "eslint .",

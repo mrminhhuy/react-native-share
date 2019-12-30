@@ -1,9 +1,9 @@
 ```js
-npm i react-native-images-share
+npm i react-native-file-share
 ```
 
 ```js
-import ShareImages from 'react-native-images-share';
+import ShareImages from 'react-native-files-share';
 ```
 
 Simple as calling:

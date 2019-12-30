@@ -48,13 +48,15 @@ class ShareImages extends ReactContextBaseJavaModule {
         if(isMultiple) {
           intent.setAction(Intent.ACTION_SEND_MULTIPLE);
           if(options.hasKey("images")){
-              ArrayList<Uri> uriList = new ArrayList<Uri>();
-              for (int i = 0; i < options.getArray("images").size(); i++) {
-                  Uri uri = Uri.parse(options.getArray("images").getString(i));
-                  uriList.add(uri);
-              }
-              intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uriList);
-              intent.setType("image/*");
+            ArrayList<Uri> uriList = new ArrayList<Uri>();
+            for (int i = 0; i < options.getArray("images").size(); i++) {
+                Uri uri = Uri.parse("");
+                File imagePath = new File(context.getCacheDir(), options.getArray("cacheFileName").getString(i));
+                uri = FileProvider.getUriForFile(context, "com.application.fileprovider", imagePath);
+                uriList.add(uri);
+            }
+            intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uriList);
+            intent.setType("image/*");
           }
         } else {
           intent.setAction(Intent.ACTION_SEND);
