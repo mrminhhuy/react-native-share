@@ -52,7 +52,7 @@ class ShareImages extends ReactContextBaseJavaModule {
             for (int i = 0; i < options.getArray("images").size(); i++) {
                 Uri uri = Uri.parse("");
                 File imagePath = new File(context.getCacheDir(), options.getArray("cacheFileName").getString(i));
-                uri = FileProvider.getUriForFile(context, "com.application.fileprovider", imagePath);
+                uri = FileProvider.getUriForFile(context, context.getPackageName() + ".fileprovider", imagePath);
                 uriList.add(uri);
             }
             intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uriList);
@@ -63,8 +63,8 @@ class ShareImages extends ReactContextBaseJavaModule {
           if(options.hasKey("images")){
             Uri imageUri = Uri.parse("");
             if(options.hasKey("cacheFileName")) {
-              File imagePath = new File(context.getCacheDir(), options.getString("cacheFileName"));
-              imageUri = FileProvider.getUriForFile(context, "com.application.fileprovider", imagePath);
+              File imagePath = new File(context.getCacheDir(), options.getArray("cacheFileName").getString(0));
+              imageUri = FileProvider.getUriForFile(context, context.getPackageName() + ".fileprovider", imagePath);
             } else {
               imageUri = Uri.parse(options.getArray("images").getString(0));
             }
@@ -80,7 +80,7 @@ class ShareImages extends ReactContextBaseJavaModule {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Activity currentActivity = getCurrentActivity();
         if (currentActivity != null) {
-            currentActivity.startActivity(Intent.createChooser(intent, "Share"));
+            currentActivity.startActivity(Intent.createChooser(intent, options.getString("title")));
         }
     }
 }

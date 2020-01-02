@@ -1,5 +1,5 @@
 ```js
-npm i react-native-file-share
+npm i react-native-files-share
 ```
 
 ```js
