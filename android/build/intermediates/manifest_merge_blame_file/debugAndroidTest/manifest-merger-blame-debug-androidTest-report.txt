@@ -1,0 +1,36 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blueprintalpha.rnandroidshare.test" >
+4
+5    <uses-sdk
+5-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:5:15-41
+7        android:targetSdkVersion="23" />
+7-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:11:5-15:88
+10        android:name="android.test.InstrumentationTestRunner"
+10-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:11:22-75
+11        android:functionalTest="false"
+11-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:13:22-53
+13        android:label="Tests for com.blueprintalpha.rnandroidshare.test"
+13-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:15:22-86
+14        android:targetPackage="com.blueprintalpha.rnandroidshare.test" />
+14-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:12:22-84
+15
+16    <application
+16-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:7:5-9:19
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.0] /Users/minhhuy/.gradle/caches/transforms-2/files-2.1/1bd162d1e9982c51999cbe410f0d807a/core-1.0.0/AndroidManifest.xml:22:18-86
+18        android:debuggable="true" >
+18-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:7:18-43
+19        <uses-library android:name="android.test.runner" />
+19-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:8:9-60
+19-->/Users/minhhuy/Project/dealer-sma-hybrid/app/component/react-native-android-share/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger5338737765202675090.xml:8:23-57
+20    </application>
+21
+22</manifest>
