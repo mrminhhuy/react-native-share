@@ -1,10 +1,15 @@
 ```js
-npm i react-native-files-share
+npm i react-native-files-share --save
 ```
+or
+```js
+yarn add react-native-files-share --save
+```
+with React Native < 0.60
 ```js
 react-native link react-native-files-share
 ```
-
+Let using:
 ```js
 import ShareImages from 'react-native-files-share';
 ```
@@ -14,7 +19,8 @@ Simple as calling:
 ShareImages.show({
   images: [''], // list images base64 or pdf base64
   exclude: [''],
-  isPDF: true | false
+  isPDF: true | false,
+  title: "" // remove if use default 
 });
 ```
 #### Note:
