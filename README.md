@@ -23,6 +23,6 @@ ShareImages.show({
 Try an example in repos.
 This is some screenshots:
 * iOS:
-![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_ios_share.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/ios_share.png)
 * android:
-![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/img_android_share.png)
+![ScreenShot](https://raw.githubusercontent.com/codebetterme/react-native-share/master/example/images/android_share.png)
